@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --theme-color: #6b4f3b; /* fallback color (e.g. coffee theme) */
+}
+
+.str-chat__channel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: linear-gradient(to bottom, #c9e8c9, #b7e7bb); */
+  background: var(--theme-color);
+  height: 100%;
+}
+
+.str-chat__container {
+  max-width: 1200px;
+  width: 100%;
+  height: 80% !important;
+  margin: 0 auto !important;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.str-chat__list {
+  background-color: #ffffff;
+  padding: 12px;
+}
+
+.str-chat__list-notifications {
+  display: none;
+}
+
+.str-chat__message-input {
+  border-top: 1px solid #ddd;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1024px) {
+  .str-chat__container {
+    max-width: 900px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .str-chat__container {
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .str-chat__container {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .str-chat__container {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .str-chat__container {
+    max-width: 320px;
+  }
+}
