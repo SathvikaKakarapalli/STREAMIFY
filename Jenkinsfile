@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "piyushkhatri968/streamify"
+        IMAGE_NAME = "sathvikaa/streamify"
     }
 
     stages {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/piyushkhatri968/STREAMIFY.git',
+                    url: 'https://github.com/SathvikaKakarapalli/STREAMIFY.git',
                     credentialsId: 'github-pat'
             }
         }
